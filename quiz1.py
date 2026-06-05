@@ -9,3 +9,28 @@ q5=st.radio("q5.100-99=",[2,8,0,1])
 q6=st.radio("q6.7+100=",[109,111,112,107])
 q7=st.radio("q7.10*6=",[50,60,30,40])
 q8=st.radio("q8.1000-999",[1,3,5,7])
+if st.button("submit"):
+    if q1==5:
+        score=score+1
+    if q2==5:
+        score=score+1
+    if q3==70000:
+        score=score+1
+    if q4==3:
+        score=score+1
+    if q5==1:
+        score=score+1
+    if q6==107:
+        score=score+1
+    if q7==60:
+        score=score+1
+    if q8==1:
+        score=score+1
+if score>=6:
+    st.success(score)
+    st.success("congratulation 👍🏽👍🏽👍🏽👍🏽★★★★★")
+elif score>4 and score<6:
+    st.write("avg score",score)
+else:
+    st.write("try hard👎🏽👎🏽👎🏽👎🏽")
+    st.write(score)            
